@@ -1,11 +1,12 @@
 {
     "default": {
-        "template": "{time_text|timestamp}{author.badges}{money.text}{author.display_name|author.name}{message}",
+        "template": "{time_text|timestamp}{author.badges}{money.text}{author.display_name|author.name} ({author.id}) {message}",
         "keys": {
-            "time_text": "{} | ",
+            "time_text": "{} ",
             "timestamp": {
-                "template": "{} | ",
-                "format": "%Y-%m-%d %H:%M:%S"
+                "template": "{} : ",
+                "format": "%d/%m/%Y %H:%M:%S",
+				"tz": "Europe/Paris"
             },
             "author.badges": {
                 "template": "({}) ",

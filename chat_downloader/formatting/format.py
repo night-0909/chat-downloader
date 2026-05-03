@@ -58,7 +58,6 @@ class ItemFormatter:
         :return: The replacement value as a string
         :rtype: str
         """
-
         split = match.group(1).split('|')
 
         for index in split:
@@ -77,10 +76,12 @@ class ItemFormatter:
             elif isinstance(formatting_info, dict):
                 template = formatting_info.get('template') or ''
                 formatting = formatting_info.get('format')
+                tz = formatting_info.get('tz')
                 if formatting:
                     if index == 'timestamp':
                         value = microseconds_to_timestamp(
-                            value, formatting)
+                            value, formatting, tz)
+                        
                     elif index == 'time_text':
                         collapse_leading_zeroes = formatting_info.get(
                             'collapse_leading_zeroes')
