@@ -6,9 +6,10 @@ Edits done from original module
 - add feature to set timezone to chat messages for lives
 
 To install this version of chat_downloader, download all files then type :
-```bash
-pip3 install .
-```
+
+.. code:: console
+
+   $ pip install .
 
 ..
     TODO
