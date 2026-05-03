@@ -1,3 +1,12 @@
+# Edits done from original module
+- Fix continuation token
+- add feature to set timezone to chat messages for lives
+
+To install this version of chat_downloader, download all files then type :
+```bash
+pip3 install .
+```
+
 ..
     TODO
     - temp move ... move back to root
