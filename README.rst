@@ -6,7 +6,7 @@ Edits done from original module
 - add feature to set timezone to chat messages for lives
 
 | When live is finished, chat_downloader prints timecode (eg. 03:00) of each chat message.
-| But when live is ongoing (case here), chat_downloader prints datetime (2026-01-01 00:00:00) of each chat message.
+| But when live is ongoing, chat_downloader prints datetime (2026-01-01 00:00:00) of each chat message.
 | To set your own datetime format, you need to set it in chat_downloader/formatting/custom_formats.json using timestamp->format and timestamp->tz
 | For instance :
 
